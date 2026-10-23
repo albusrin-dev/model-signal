@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Signals — Model Signal</title>
+  <meta name="description" content="The few AI developments that matter — explained. Verified facts, concrete consequences, honest uncertainty.">
+  <link rel="stylesheet" href="../css/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="../index.html" class="logo">MODEL <span>/</span> SIGNAL</a>
+      <button class="nav-toggle" aria-label="Toggle navigation" onclick="document.querySelector('.nav').classList.toggle('open')">☰</button>
+      <nav class="nav">
+        <a href="signals.html" class="active">Signals</a>
+        <a href="about.html">About</a>
+        <a href="newsletter.html">Newsletter</a>
+        <a href="watch.html">Watch</a>
+        <a href="advertise.html">Advertise</a>
+        <a href="newsletter.html" class="nav-cta">Subscribe</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      <section class="hero">
+        <p class="hero-tagline">Archive</p>
+        <h1>Signals</h1>
+        <p class="lead">The few developments that matter — explained. We filter for verified facts, concrete consequences, and honest uncertainty.</p>
+      </section>
+
+      <div class="filters">
+        <button class="filter-btn active">All</button>
+        <button class="filter-btn">Models</button>
+        <button class="filter-btn">Agents</button>
+        <button class="filter-btn">Economics</button>
+        <button class="filter-btn">Platforms</button>
+        <button class="filter-btn">Safety & Policy</button>
+        <button class="filter-btn">Robotics</button>
+        <button class="filter-btn">Business</button>
+      </div>
+
+      <div class="signal-list">
+        <article class="card">
+          <div class="card-meta">
+            <span class="card-tag">Models</span>
+            <span>2026-10-20</span>
+          </div>
+          <h3><a href="#">Open-weight models cross a practical capability threshold</a></h3>
+          <div class="card-body">
+            Several open-weight releases in the last two weeks now match or exceed closed models on key developer and agent benchmarks — with licensing that allows commercial use. The gap that mattered for most teams just narrowed.
+          </div>
+          <ul class="card-points">
+            <li><strong>What changed:</strong> Performance parity on coding and tool-use tasks is no longer theoretical.</li>
+            <li><strong>Why it matters:</strong> Cost, control, and deployment options expand for anyone not locked into a single provider.</li>
+          </ul>
+          <p class="source-label">Sources: model cards, independent evals, licensing docs</p>
+        </article>
+
+        <article class="card">
+          <div class="card-meta">
+            <span class="card-tag">Economics</span>
+            <span>2026-10-17</span>
+          </div>
+          <h3><a href="#">Inference costs keep falling — but the bill is shifting</a></h3>
+          <div class="card-body">
+            Token prices from major providers dropped again this month. At the same time, usage volume and context length are rising faster than unit costs are falling. Net effect for many teams: higher absolute spend, lower cost per useful output.
+          </div>
+          <ul class="card-points">
+            <li><strong>What changed:</strong> Price cuts landed; concurrent demand and longer contexts offset savings for heavy users.</li>
+            <li><strong>Why it matters:</strong> Budget planning needs to track effective cost per task, not just list price per million tokens.</li>
+          </ul>
+          <p class="source-label">Sources: provider pricing pages, public usage reports</p>
+        </article>
+
+        <article class="card">
+          <div class="card-meta">
+            <span class="card-tag">Agents</span>
+            <span>2026-10-14</span>
+          </div>
+          <h3><a href="#">Agent reliability is becoming a product surface</a></h3>
+          <div class="card-body">
+            Several platforms shipped clearer failure modes, retry policies, and human-in-the-loop controls this cycle. The conversation is shifting from “can it act?” to “when it fails, how does it fail?”
+          </div>
+          <ul class="card-points">
+            <li><strong>What changed:</strong> Explicit reliability features moved from research demos into production docs and UIs.</li>
+            <li><strong>Why it matters:</strong> Teams can now evaluate agents on operational risk, not only on peak capability demos.</li>
+          </ul>
+          <p class="source-label">Sources: platform changelogs, developer docs</p>
+        </article>
+
+        <article class="card">
+          <div class="card-meta">
+            <span class="card-tag">Safety & Policy</span>
+            <span>2026-10-10</span>
+          </div>
+          <h3><a href="#">New disclosure rules for AI-generated content take effect in key markets</a></h3>
+          <div class="card-body">
+            Labeling requirements for synthetic media and AI-assisted content are now live in multiple jurisdictions. Enforcement details still vary, but the direction is clear: provenance and disclosure are becoming table stakes.
+          </div>
+          <ul class="card-points">
+            <li><strong>What changed:</strong> Legal obligation to label certain AI-generated outputs is no longer hypothetical.</li>
+            <li><strong>Why it matters:</strong> Product teams and publishers need concrete workflows for disclosure — not just principles.</li>
+          </ul>
+          <p class="source-label">Sources: regulatory texts, official guidance</p>
+        </article>
+
+        <article class="card">
+          <div class="card-meta">
+            <span class="card-tag">Business</span>
+            <span>2026-10-07</span>
+          </div>
+          <h3><a href="#">Major cloud providers deepen exclusive model partnerships</a></h3>
+          <div class="card-body">
+            Two large cloud platforms expanded exclusive or preferred distribution deals with frontier labs. Access patterns and pricing leverage are consolidating further around a small number of relationships.
+          </div>
+          <ul class="card-points">
+            <li><strong>What changed:</strong> Distribution exclusivity tightened for certain high-demand models.</li>
+            <li><strong>Why it matters:</strong> Multi-cloud and multi-model strategies face higher friction and switching costs.</li>
+          </ul>
+          <p class="source-label">Sources: company announcements, partnership filings</p>
+        </article>
+      </div>
+
+      <p class="text-sm text-muted mt-12" style="text-align:center;">
+        We’re just getting started. New signals land here and on YouTube first.
+      </p>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div>
+        <div class="footer-brand">MODEL / SIGNAL</div>
+        <div class="footer-tagline">What happened. What changed. What matters.</div>
+      </div>
+      <div class="footer-links">
+        <a href="about.html">About</a>
+        <a href="newsletter.html">Newsletter</a>
+        <a href="advertise.html">Advertise</a>
+        <a href="privacy.html">Privacy</a>
+        <a href="disclosures.html">Disclosures</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Model Signal. All rights reserved.</span>
+      <span>Working name — final clearance pending.</span>
+    </div>
+  </footer>
+</body>
+</html>
